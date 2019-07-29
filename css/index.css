@@ -130,9 +130,10 @@ table {
 html,
 body {
   height: 100%;
-  max-width: 1000px;
+  max-width: 1095px;
   background-color: #243B6B;
   margin: auto;
+  margin-top: -1.4%;
 }
 /* ----------------- MixIn ---------------- */
 /* ----------------- Variable ---------------- */
@@ -347,6 +348,10 @@ nav a {
 .section3 .headerAndButtons a,
 .section3 .headerAndButtons h1 {
   margin-bottom: 7%;
+}
+.section3 .headerAndButtons .premium {
+  background: #50B83C;
+  color: #FAFAFA;
 }
 .section3 img {
   width: 50%;
