@@ -1,0 +1,210 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	max-width: 1000px;
+	background-color: orange;
+	margin: auto;
+}
+
+/* ----------------- MixIn ---------------- */
+
+.sectionFormat() {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 3%;
+	border-radius: 10px;
+	@media screen and (max-width: 500px) {
+		margin-top: 3%;
+	}
+}
+.underlineText() {
+	border-bottom: 1px dashed white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 25rem;
+}
+
+/* ----------------- Variable ---------------- */
+@colorDG: darkgrey;
+@font: 'Chakra Petch', sans-serif;
+/* ----------------- Variable ---------------- */
+
+/* --------- global font here ------------- */
+
+p, h1, h2, h3, a {
+	font-family: @font;
+}
+/* ---------------------------------------- */
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	color: dodgerblue;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+hr {
+	width: 100%;
+	border: 1px solid @colorDG;
+}
+
+.wrapper {
+	margin: 3%;
+}
+
+header {
+
+}
+
+nav {
+	display: flex;
+	max-width: 100%;
+	border-radius: 5px;
+	// padding-left: 14rem;
+	background-color: @colorDG;
+	justify-content: space-around;
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.intro {
+	.sectionFormat();
+	background-color: lightgrey;
+	img, h1, h3, p {
+		margin-bottom: 0.7rem;
+	}
+	img {
+		width: 200px;
+		height: 200px;
+		border: 1px solid @colorDG;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 1.8rem;
+	}
+	a {
+		border-radius: 7px;
+		width: 10rem;
+		text-align: center;
+		padding: 0.7rem;
+		background: black;
+		color: white;
+		text-shadow: 0 0 0.1rem rgb(0, 0, 0), 0 0 0.3rem #FFF, 0 0 0.7rem @colorDG;
+	}
+	a:hover {
+		background: white;
+  		color: black;
+  		animation-name: fade;
+		animation-duration: .5s;
+		text-shadow: 0 0 0.2rem @colorDG, 0 0 0.5rem #FFF, 0 0 0.7rem #FFF, 0 0 20px black;
+	}
+	@keyframes fade {
+		from {background-color: black;}
+		to {background-color: white;}
+		from {color: white;}
+		to {color: black;}
+	  }
+}
+
+.skills {
+	.sectionFormat();
+	background-color: @colorDG;
+	.skillList {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2%;
+		p {
+			.underlineText();
+		}
+	}
+}
+
+.history {
+	.sectionFormat();
+	background-color: grey;
+	.historyList {
+		.underlineText();
+	}
+
+}
+
+.contact {
+	.sectionFormat();
+	background-color: black;
+	h2 {
+		color: white;
+	}
+	p {
+		.underlineText();
+		color: white;
+	}
+}
