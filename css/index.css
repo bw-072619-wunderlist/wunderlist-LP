@@ -267,6 +267,17 @@ nav a {
     margin-top: 3%;
   }
 }
+.section2 .imgAndText {
+  display: flex;
+  flex-direction: row;
+}
+.section2 h1 {
+  text-align: center;
+}
+.section2 img {
+  width: 50%;
+  height: auto;
+}
 .section2 .skillList {
   display: flex;
   flex-direction: column;
@@ -284,6 +295,8 @@ nav a {
   width: 100%;
   padding: 7%;
   border: 1px solid #E3F1DF;
+  flex-direction: row;
+  align-items: center;
   background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
@@ -291,9 +304,51 @@ nav a {
     margin-top: 3%;
   }
 }
+.section3 a {
+  border: 2px solid #50B83C;
+  border-radius: 7px;
+  width: 13rem;
+  text-align: center;
+  padding: 1.1rem;
+  background: #FAFAFA;
+  color: #108043;
+}
+.section3 a:hover {
+  background: #50B83C;
+  color: #FAFAFA;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade {
+  from {
+    background-color: #FAFAFA;
+  }
+  to {
+    background-color: #50B83C;
+  }
+  from {
+    color: #50B83C;
+  }
+  to {
+    color: #FAFAFA;
+  }
+}
 .section3 .historyList {
   border-bottom: 1px dashed white;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 25rem;
+}
+.section3 .headerAndButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 .headerAndButtons a,
+.section3 .headerAndButtons h1 {
+  margin-bottom: 7%;
+}
+.section3 img {
+  width: 50%;
+  height: auto;
 }
