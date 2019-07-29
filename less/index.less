@@ -56,18 +56,42 @@ table {
 html, body {
 	height: 100%;
 	max-width: 1000px;
-	background-color: white;
+	background-color: @accentBlue;
 	margin: auto;
 }
 
 /* ----------------- MixIn ---------------- */
+.buttonFormat() {
+	a {
+		border: 2px solid @green;
+		border-radius: 7px;
+		width: 13rem;
+		text-align: center;
+		padding: 1.1rem;
+		background: @lightestGreen;
+		color: @darkGreen;
+	}
+	a:hover {
+		background: @green;
+		color: @lightestGreen;
+		animation-name: fade;
+		animation-duration: .5s;
+	}
+	@keyframes fade {
+		from {background-color: @lightestGreen;}
+		to {background-color: @green;}
+		from {color: @green;}
+		to {color: @lightestGreen;}
+	}
 
+}
 .sectionFormat() {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	padding: 3%;
-	border-radius: 10px;
+	border: 1px solid @lighterGreen;
+	// border-radius: 30px;
 	@media screen and (max-width: 500px) {
 		margin-top: 3%;
 	}
@@ -99,6 +123,7 @@ html, body {
 
 p, h1, h2, h3, a {
 	font-family: @font;
+	color: @accentBlue;
 }
 /* ---------------------------------------- */
 
@@ -119,6 +144,10 @@ nav a:hover {
 h2 {
 	font-size: 2.5rem;
 }
+h1 {
+	font-size: 48pt;
+	color: @accentBlue;
+}
 hr {
 	width: 100%;
 	border: 1px solid @lightGreen;
@@ -135,7 +164,7 @@ header {
 nav {
 	display: flex;
 	max-width: 100%;
-	border-radius: 5px;
+	// border-radius: 5px;
 	// padding-left: 14rem;
 	background-color: @lightestGreen;
 	justify-content: space-around;
@@ -145,13 +174,10 @@ nav {
 	}
 }
 
-.section2, .section3, .section4 {
-	border: 1px solid @lighterGreen;
-}
-
 .section1 {
 	.sectionFormat();
-	background-color: #50B83C;
+	background-color: @lighterGreen;
+	// border-radius: 30px;
 	img, h1, h3, p {
 		margin-bottom: 0.7rem;
 	}
@@ -159,39 +185,11 @@ nav {
 		width: 200px;
 		height: 200px;
 	}
-	h1 {
-		font-size: 4rem;
-		color: @lightestGreen;
-	}
 	h3 {
 		font-size: 1.8rem;
-		color: @lightestGreen;
+		color: @accentBlue;
 	}
-	a {
-		border-radius: 7px;
-		width: 10rem;
-		text-align: center;
-		padding: 0.7rem;
-		background: black;
-		color: white;
-		text-shadow: 0 0 0.1rem rgb(0, 0, 0), 0 0 0.3rem #FFF, 0 0 0.7rem @colorDG;
-	}
-	a:hover {
-		background: white;
-  		color: black;
-  		animation-name: fade;
-		animation-duration: .5s;
-		text-shadow: 0 0 0.2rem @colorDG, 0 0 0.5rem #FFF, 0 0 0.7rem #FFF, 0 0 20px black;
-	}
-	@keyframes fade {
-		from {background-color: black;}
-		to {background-color: white;}
-		from {color: white;}
-		to {color: black;}
-	}
-	p {
-		color: @lightestGreen;
-	}
+	.buttonFormat();
 }
 
 .section2 {
@@ -209,21 +207,17 @@ nav {
 
 .section3 {
 	.sectionFormat();
-	background-color: @lightestGreen;
+	background-color: @lighterGreen;
 	.historyList {
 		.underlineText();
 	}
 
 }
 
-.section4 {
-	.sectionFormat();
-	background-color: @lightestGreen;
-	h2 {
-		color: black
-	}
-	p {
-		.underlineText();
-		color: black;
-	}
-}
+// .section4 {
+// 	.sectionFormat();
+// 	background-color: @lightestGreen;
+// 	h2 {
+// 		color: black
+// 	}
+// }

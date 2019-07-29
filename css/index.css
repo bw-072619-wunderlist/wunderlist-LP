@@ -134,7 +134,7 @@ html,
 body {
   height: 100%;
   max-width: 1000px;
-  background-color: white;
+  background-color: #243B6B;
   margin: auto;
 }
 /* ----------------- MixIn ---------------- */
@@ -147,6 +147,7 @@ h2,
 h3,
 a {
   font-family: 'Lato', sans-serif;
+  color: #243B6B;
 }
 /* ---------------------------------------- */
 p {
@@ -163,6 +164,10 @@ nav a:hover {
 h2 {
   font-size: 2.5rem;
 }
+h1 {
+  font-size: 48pt;
+  color: #243B6B;
+}
 hr {
   width: 100%;
   border: 1px solid #BBE5B3;
@@ -173,7 +178,6 @@ hr {
 nav {
   display: flex;
   max-width: 100%;
-  border-radius: 5px;
   background-color: #FAFAFA;
   justify-content: space-around;
 }
@@ -181,18 +185,13 @@ nav a {
   text-decoration: none;
   color: black;
 }
-.section2,
-.section3,
-.section4 {
-  border: 1px solid #E3F1DF;
-}
 .section1 {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 3%;
-  border-radius: 10px;
-  background-color: #50B83C;
+  border: 1px solid #E3F1DF;
+  background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
   .section1 {
@@ -209,53 +208,45 @@ nav a {
   width: 200px;
   height: 200px;
 }
-.section1 h1 {
-  font-size: 4rem;
-  color: #FAFAFA;
-}
 .section1 h3 {
   font-size: 1.8rem;
-  color: #FAFAFA;
+  color: #243B6B;
 }
 .section1 a {
+  border: 2px solid #50B83C;
   border-radius: 7px;
-  width: 10rem;
+  width: 13rem;
   text-align: center;
-  padding: 0.7rem;
-  background: black;
-  color: white;
-  text-shadow: 0 0 0.1rem #000000, 0 0 0.3rem #FFF, 0 0 0.7rem darkgrey;
+  padding: 1.1rem;
+  background: #FAFAFA;
+  color: #108043;
 }
 .section1 a:hover {
-  background: white;
-  color: black;
+  background: #50B83C;
+  color: #FAFAFA;
   animation-name: fade;
   animation-duration: 0.5s;
-  text-shadow: 0 0 0.2rem darkgrey, 0 0 0.5rem #FFF, 0 0 0.7rem #FFF, 0 0 20px black;
 }
 @keyframes fade {
   from {
-    background-color: black;
+    background-color: #FAFAFA;
   }
   to {
-    background-color: white;
+    background-color: #50B83C;
   }
   from {
-    color: white;
+    color: #50B83C;
   }
   to {
-    color: black;
+    color: #FAFAFA;
   }
-}
-.section1 p {
-  color: #FAFAFA;
 }
 .section2 {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 3%;
-  border-radius: 10px;
+  border: 1px solid #E3F1DF;
   background-color: #FAFAFA;
 }
 @media screen and (max-width: 500px) {
@@ -279,8 +270,8 @@ nav a {
   flex-direction: column;
   width: 100%;
   padding: 3%;
-  border-radius: 10px;
-  background-color: #FAFAFA;
+  border: 1px solid #E3F1DF;
+  background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
   .section3 {
@@ -292,27 +283,4 @@ nav a {
   margin-bottom: 10px;
   margin-top: 10px;
   width: 25rem;
-}
-.section4 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 3%;
-  border-radius: 10px;
-  background-color: #FAFAFA;
-}
-@media screen and (max-width: 500px) {
-  .section4 {
-    margin-top: 3%;
-  }
-}
-.section4 h2 {
-  color: black;
-}
-.section4 p {
-  border-bottom: 1px dashed white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 25rem;
-  color: black;
 }
