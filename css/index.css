@@ -156,9 +156,6 @@ a {
   text-decoration: none;
   color: black;
 }
-nav a:hover {
-  color: #9190A8;
-}
 h2 {
   font-size: 14pt;
 }
@@ -192,6 +189,9 @@ nav a {
   text-transform: uppercase;
   color: black;
   padding: 15px;
+}
+nav a:hover {
+  color: #9190A8;
 }
 .section1 {
   display: flex;
@@ -305,7 +305,18 @@ nav a {
     margin-top: 3%;
   }
 }
-.section3 a {
+.section3 .historyList {
+  border-bottom: 1px dashed white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 25rem;
+}
+.section3 .headerAndButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 .headerAndButtons a {
   border: 2px solid #50B83C;
   border-radius: 7px;
   width: 13rem;
@@ -314,7 +325,7 @@ nav a {
   background: #FAFAFA;
   color: #108043;
 }
-.section3 a:hover {
+.section3 .headerAndButtons a:hover {
   background: #50B83C;
   color: #FAFAFA;
   animation-name: fade;
@@ -333,17 +344,6 @@ nav a {
   to {
     color: #FAFAFA;
   }
-}
-.section3 .historyList {
-  border-bottom: 1px dashed white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 25rem;
-}
-.section3 .headerAndButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .section3 .headerAndButtons a,
 .section3 .headerAndButtons h1 {
