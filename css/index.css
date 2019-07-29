@@ -104,9 +104,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -152,7 +149,7 @@ a {
 /* ---------------------------------------- */
 p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2;
 }
 a {
   text-decoration: none;
@@ -162,10 +159,12 @@ nav a:hover {
   color: #9190A8;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 14pt;
 }
 h1 {
-  font-size: 48pt;
+  font-size: 36pt;
+  font-weight: 700;
+  line-height: 1.5;
   color: #243B6B;
 }
 hr {
@@ -178,41 +177,55 @@ hr {
 nav {
   display: flex;
   max-width: 100%;
+  height: 158px;
   background-color: #FAFAFA;
-  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
 }
 nav a {
   text-decoration: none;
+  text-transform: uppercase;
   color: black;
+  padding: 15px;
 }
 .section1 {
   display: flex;
+  flex-direction: row;
+  background-color: #E3F1DF;
+}
+.section1 img {
+  width: 500px;
+  height: auto;
+  background-color: #E3F1DF;
+}
+.textAndButton {
+  display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 3%;
+  padding: 7%;
   border: 1px solid #E3F1DF;
   background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
-  .section1 {
+  .textAndButton {
     margin-top: 3%;
   }
 }
-.section1 img,
-.section1 h1,
-.section1 h3,
-.section1 p {
+.textAndButton img,
+.textAndButton h1,
+.textAndButton h3,
+.textAndButton p {
   margin-bottom: 0.7rem;
 }
-.section1 img {
-  width: 200px;
-  height: 200px;
-}
-.section1 h3 {
+.textAndButton h3 {
   font-size: 1.8rem;
   color: #243B6B;
 }
-.section1 a {
+.textAndButton a {
   border: 2px solid #50B83C;
   border-radius: 7px;
   width: 13rem;
@@ -221,7 +234,7 @@ nav a {
   background: #FAFAFA;
   color: #108043;
 }
-.section1 a:hover {
+.textAndButton a:hover {
   background: #50B83C;
   color: #FAFAFA;
   animation-name: fade;
@@ -245,7 +258,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 3%;
+  padding: 7%;
   border: 1px solid #E3F1DF;
   background-color: #FAFAFA;
 }
@@ -269,7 +282,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 3%;
+  padding: 7%;
   border: 1px solid #E3F1DF;
   background-color: #E3F1DF;
 }
