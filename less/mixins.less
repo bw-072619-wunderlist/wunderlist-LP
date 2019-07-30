@@ -1,0 +1,41 @@
+.buttonFormat() {
+	a {
+		border: 2px solid @green;
+		border-radius: 7px;
+		width: 13rem;
+        text-align: center;
+        font-weight: 400;
+		padding: 1.1rem;
+		background: @lightestGreen;
+		color: @darkGreen;
+	}
+	a:hover {
+		background: @green;
+		color: @lightestGreen;
+		animation-name: fade;
+		animation-duration: .5s;
+	}
+	@keyframes fade {
+		from {background-color: @lightestGreen;}
+		to {background-color: @green;}
+		from {color: @green;}
+		to {color: @lightestGreen;}
+	}
+
+}
+.sectionFormat() {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    padding: 6%;
+	// border-radius: 30px;
+	@media screen and (max-width: 500px) {
+		margin-top: 3%;
+	}
+}
+.underlineText() {
+	border-bottom: 1px dashed white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 25rem;
+}

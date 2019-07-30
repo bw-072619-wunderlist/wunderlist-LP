@@ -142,6 +142,7 @@ h3,
 a {
   font-family: 'Lato', sans-serif;
   color: #243B6B;
+  font-weight: 300;
 }
 /* ---------------------------------------- */
 p {
@@ -200,16 +201,20 @@ nav h2 {
   background-color: #E3F1DF;
 }
 .section1 img {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 353px;
   background-color: #E3F1DF;
+}
+.section1 .imageAlign {
+  display: flex;
+  align-items: center;
+  width: 167%;
 }
 .textAndButton {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 7%;
-  border: 1px solid #E3F1DF;
+  padding: 6%;
   background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
@@ -217,21 +222,12 @@ nav h2 {
     margin-top: 3%;
   }
 }
-.textAndButton img,
-.textAndButton h1,
-.textAndButton h3,
-.textAndButton p {
-  margin-bottom: 0.7rem;
-}
-.textAndButton h3 {
-  font-size: 1.8rem;
-  color: #243B6B;
-}
 .textAndButton a {
   border: 2px solid #50B83C;
   border-radius: 7px;
   width: 13rem;
   text-align: center;
+  font-weight: 400;
   padding: 1.1rem;
   background: #FAFAFA;
   color: #108043;
@@ -256,12 +252,21 @@ nav h2 {
     color: #FAFAFA;
   }
 }
+.textAndButton img,
+.textAndButton h1,
+.textAndButton h3,
+.textAndButton p {
+  margin-bottom: 0.7rem;
+}
+.textAndButton h3 {
+  font-size: 1.8rem;
+  color: #243B6B;
+}
 .section2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 7%;
-  border: 1px solid #E3F1DF;
+  padding: 6%;
   background-color: #FAFAFA;
 }
 @media screen and (max-width: 500px) {
@@ -273,6 +278,9 @@ nav h2 {
   display: flex;
   flex-direction: row;
 }
+.section2 .textAndButton {
+  background-color: #FAFAFA;
+}
 .section2 h1 {
   text-align: center;
 }
@@ -280,23 +288,11 @@ nav h2 {
   width: 50%;
   height: auto;
 }
-.section2 .skillList {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-}
-.section2 .skillList p {
-  border-bottom: 1px dashed white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 25rem;
-}
 .section3 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 7%;
-  border: 1px solid #E3F1DF;
+  padding: 6%;
   flex-direction: row;
   align-items: center;
   background-color: #E3F1DF;
@@ -322,6 +318,7 @@ nav h2 {
   border-radius: 7px;
   width: 13rem;
   text-align: center;
+  font-weight: 400;
   padding: 1.1rem;
   background: #FAFAFA;
   color: #108043;
