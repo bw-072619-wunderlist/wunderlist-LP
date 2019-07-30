@@ -234,7 +234,7 @@ nav .rightSideNav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 25%;
+  width: 250px;
   max-width: 100%;
   background-color: #FAFAFA;
   align-items: center;
@@ -251,6 +251,7 @@ nav .rightSideNav {
     padding-bottom: 5%;
     padding-top: 5%;
     border-top: 13px solid #243B6B;
+    border-bottom: 13px solid #243B6B;
     justify-content: space-around;
   }
 }
