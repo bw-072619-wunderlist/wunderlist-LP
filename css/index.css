@@ -139,6 +139,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 a {
   font-family: 'Lato', sans-serif;
   color: #243B6B;
@@ -162,6 +163,10 @@ h1 {
   line-height: 1.5;
   color: #243B6B;
 }
+h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 hr {
   width: 100%;
   border: 1px solid #BBE5B3;
@@ -171,21 +176,22 @@ hr {
 }
 nav {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+}
+nav .leftSideNav {
+  display: flex;
   max-width: 100%;
   height: 158px;
   background-color: #FAFAFA;
   align-items: center;
 }
 nav img {
-  width: 50px;
-  height: 50px;
+  width: 130px;
+  height: auto;
   margin-left: 40px;
-}
-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  padding: 15px;
+  margin-right: 23px;
 }
 nav a:hover {
   color: #9190A8;
@@ -194,6 +200,57 @@ nav h2 {
   letter-spacing: 3px;
   font-weight: 700;
   font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 15px;
+}
+nav .rightSideNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  max-width: 100%;
+  background-color: #FAFAFA;
+  align-items: center;
+}
+nav .rightSideNav .signUp {
+  color: #108043;
+  text-decoration: underline;
+  font-weight: 400;
+}
+nav .rightSideNav .signIn {
+  padding-right: 36px;
+}
+nav .rightSideNav .signIn a {
+  border: 2px solid #50B83C;
+  border-radius: 7px;
+  width: 13rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 1.1rem;
+  background: #FAFAFA;
+  color: #108043;
+}
+nav .rightSideNav .signIn a:hover {
+  background: #50B83C;
+  color: #FAFAFA;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade {
+  from {
+    background-color: #FAFAFA;
+  }
+  to {
+    background-color: #50B83C;
+  }
+  from {
+    color: #50B83C;
+  }
+  to {
+    color: #FAFAFA;
+  }
 }
 .section1 {
   display: flex;
@@ -295,6 +352,7 @@ nav h2 {
   padding: 6%;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background-color: #E3F1DF;
 }
 @media screen and (max-width: 500px) {
@@ -351,9 +409,18 @@ nav h2 {
   background: #50B83C;
   color: #FAFAFA;
 }
-.section3 img {
-  width: 50%;
+.section3 .imgAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  padding: 3px;
+  background-color: #FAFAFA;
+}
+.section3 .imgAndText img {
+  width: 200px;
   height: auto;
+  padding: 3px;
 }
 /* Set every element's box-sizing to border-box */
 /* ----------------- MixIn ---------------- */
