@@ -11,13 +11,20 @@ nav {
         height: 158px;
         background-color: @lightestGreen;
         align-items: center;
+        @media @mobile {
+            img {
+                display: inline-block;
+                margin-left: -10px;
+                margin-left: 7px;
+            }  
+        }
     }
 	img {
 		width: 130px;
 		height: auto;
         margin-left: 40px;
         margin-right: 23px;
-	}
+    }
 	a:hover {
 		color: @lightAccBlue;
 	}
