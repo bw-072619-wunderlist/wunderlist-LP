@@ -180,12 +180,30 @@ nav {
   justify-content: space-between;
   background-color: #FAFAFA;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    height: 100%;
+  }
+  nav img {
+    display: none;
+  }
+}
 nav .leftSideNav {
   display: flex;
   max-width: 100%;
   height: 158px;
   background-color: #FAFAFA;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav .leftSideNav {
+    flex-direction: column;
+    height: 100%;
+  }
+  nav .leftSideNav img {
+    display: none;
+  }
 }
 nav img {
   width: 130px;
@@ -202,7 +220,7 @@ nav h2 {
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #243B6B;
   padding: 15px;
 }
 nav .rightSideNav {
@@ -213,6 +231,21 @@ nav .rightSideNav {
   max-width: 100%;
   background-color: #FAFAFA;
   align-items: center;
+}
+@media (max-width: 800px) {
+  nav .rightSideNav {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  nav .rightSideNav {
+    width: 100%;
+    padding-left: 9%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-top: 13px solid #243B6B;
+    justify-content: space-around;
+  }
 }
 nav .rightSideNav .signUp {
   color: #108043;
@@ -257,6 +290,22 @@ nav .rightSideNav .signIn a:hover {
   flex-direction: row;
   background-color: #E3F1DF;
 }
+@media (max-width: 500px) {
+  .section1 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .section1 img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .section1 {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .section1 img {
   width: auto;
   height: 353px;
@@ -266,6 +315,13 @@ nav .rightSideNav .signIn a:hover {
   display: flex;
   align-items: center;
   width: 167%;
+}
+@media (max-width: 800px) {
+  .section1 .imageAlign {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .textAndButton {
   display: flex;
@@ -331,9 +387,25 @@ nav .rightSideNav .signIn a:hover {
     margin-top: 3%;
   }
 }
+@media (max-width: 500px) {
+  .section2 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .section2 img {
+    display: none;
+  }
+}
 .section2 .imgAndText {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 800px) {
+  .section2 .imgAndText {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .section2 .textAndButton {
   background-color: #FAFAFA;
@@ -342,8 +414,8 @@ nav .rightSideNav .signIn a:hover {
   text-align: center;
 }
 .section2 img {
-  width: 50%;
-  height: auto;
+  width: auto;
+  height: 297px;
 }
 .section3 {
   display: flex;
@@ -358,6 +430,21 @@ nav .rightSideNav .signIn a:hover {
 @media screen and (max-width: 500px) {
   .section3 {
     margin-top: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .section3 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .section3 img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .section3 h1,
+  .section3 h4 {
+    display: none;
   }
 }
 .section3 .historyList {
@@ -416,6 +503,11 @@ nav .rightSideNav .signIn a:hover {
   width: 42%;
   padding: 3px;
   background-color: #FAFAFA;
+}
+@media (max-width: 800px) {
+  .section3 .imgAndText {
+    background: none;
+  }
 }
 .section3 .imgAndText img {
   width: 200px;

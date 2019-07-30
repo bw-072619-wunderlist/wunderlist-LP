@@ -39,3 +39,20 @@
 	margin-top: 10px;
 	width: 25rem;
 }
+.mobile-view() {
+    @media @mobile {
+        // .section-margin(15px, 15px);
+        flex-direction: column;
+        height: 100%;
+        img {
+            display: none;
+        }
+    } 
+}
+.tablet-view() {
+    @media @tablet {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
