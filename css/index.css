@@ -218,14 +218,15 @@ nav .leftSideNav {
     margin-left: 7px;
   }
 }
+nav .leftSideNav a:hover {
+  color: #FAFAFA;
+  text-shadow: 0px 0px 3px #BBE5B3;
+}
 nav img {
   width: 130px;
   height: auto;
   margin-left: 40px;
   margin-right: 23px;
-}
-nav a:hover {
-  color: #9190A8;
 }
 nav .rightSideNav {
   display: flex;
@@ -251,6 +252,9 @@ nav .rightSideNav {
     border-bottom: 12px solid #243B6B;
     justify-content: space-around;
   }
+}
+nav .rightSideNav a:hover {
+  text-shadow: 0px 0px 3px #BBE5B3;
 }
 nav .rightSideNav .signUp {
   color: #108043;
