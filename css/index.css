@@ -155,7 +155,13 @@ a {
   color: black;
 }
 h2 {
-  font-size: 14pt;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #243B6B;
+  padding: 15px;
 }
 h1 {
   font-size: 36pt;
@@ -220,15 +226,6 @@ nav img {
 }
 nav a:hover {
   color: #9190A8;
-}
-nav h2 {
-  letter-spacing: 3px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #243B6B;
-  padding: 15px;
 }
 nav .rightSideNav {
   display: flex;
@@ -327,9 +324,10 @@ footer p {
   }
 }
 .section1 img {
-  width: auto;
-  height: 353px;
+  width: 100%;
+  height: auto;
   background-color: #E3F1DF;
+  padding-right: 6%;
 }
 .section1 .imageAlign {
   display: flex;
@@ -342,6 +340,86 @@ footer p {
     flex-direction: column;
     width: 100%;
   }
+}
+@media (max-width: 800px) {
+  .section1 .imageAlign {
+    padding-bottom: 6%;
+    padding-left: 6%;
+  }
+}
+.section1A {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 6%;
+  background-color: #E3F1DF;
+}
+@media screen and (max-width: 500px) {
+  .section1A {
+    margin-top: 3%;
+  }
+}
+.section1A img {
+  width: 33%;
+  height: auto;
+}
+.section1A a:hover {
+  text-decoration: underline;
+}
+.section1A a h2 {
+  text-transform: none;
+  color: #108043;
+}
+.section1A h2 {
+  padding-left: 0%;
+}
+.section1A hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section1A .aboutImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section1A .aboutImages img {
+  margin-bottom: 10px;
+}
+.section2A {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 6%;
+  align-items: flex-end;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 500px) {
+  .section2A {
+    margin-top: 3%;
+  }
+}
+.section2A img {
+  width: 33%;
+  height: auto;
+}
+.section2A a h2 {
+  text-transform: none;
+  color: #108043;
+}
+.section2A h2 {
+  padding-right: 0%;
+}
+.section2A hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section2A .aboutImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section2A .aboutImages img {
+  margin-bottom: 10px;
 }
 .textAndButton {
   display: flex;
@@ -436,6 +514,12 @@ footer p {
 .section2 img {
   width: auto;
   height: 297px;
+}
+@media (max-width: 800px) {
+  .section2 img {
+    width: 100%;
+    height: auto;
+  }
 }
 .section3 {
   display: flex;
