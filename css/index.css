@@ -358,9 +358,10 @@ footer p {
 .section1A a:hover {
   text-decoration: underline;
 }
-.section1A a h2 {
+.section1A h2 a {
   text-transform: none;
   color: #108043;
+  font-weight: 400;
 }
 .section1A h2 {
   padding-left: 0%;
@@ -403,9 +404,13 @@ footer p {
   align-items: flex-end;
   background-color: #FAFAFA;
 }
-.section2A a h2 {
+.section2A a:hover {
+  text-decoration: underline;
+}
+.section2A h2 a {
   text-transform: none;
   color: #108043;
+  font-weight: 400;
 }
 .section2A h2 {
   padding-right: 0%;
