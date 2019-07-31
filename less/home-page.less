@@ -23,9 +23,10 @@
     }
 }
 
+/* ------------------ About Page ------------------ */
+
 .section1A {
     .sectionFormat();
-    .imageFormat();
     background-color: @lighterGreen;
     a:hover {
        text-decoration: underline;
@@ -42,18 +43,23 @@
         margin-bottom: 20px;
     }
     .aboutImages {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        .imageFormat();
         img {
             margin-bottom: 10px;
+        }
+        .PNG {
+            .mobile-view();
+            @media @tablet {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 }
 
 .section2A {
     .sectionFormat();
-    .imageFormat();
     align-items: flex-end;
     background-color: @lightestGreen;
     a h2 {
@@ -62,34 +68,59 @@
     }
     h2 {
         padding-right: 0%;
-
     }
     hr {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .aboutImages {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .aboutImages{
+        .imageFormat();
+        @media @mobile {
+            justify-content: flex-start;
+        }
+        align-self: normal;
         img {
             margin-bottom: 10px;
         }
+        .PNG {
+            .mobile-view();
+            @media @tablet {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+    .nameAndText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media @mobile {
+            align-items: flex-start;
+            h2 {
+                padding-left: 0px;
+            }
+        }
     }
 }
+
+/* ---------------------------------------------- */
 
 .textAndButton {
     .sectionFormat();
     .buttonFormat();
 	background-color: @lighterGreen;
 	// border-radius: 30px;
-	img, h1, h3, p {
+	img, h3, p {
         margin-bottom: 0.7rem;
     }
 	h3 {
 		font-size: 1.8rem;
 		color: @accentBlue;
-	}
+    }
+    @media @mobile {
+        align-items: center;
+    }
 
 }
 
