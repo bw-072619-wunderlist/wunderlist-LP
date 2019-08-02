@@ -129,7 +129,6 @@ table {
 html,
 body {
   height: 100%;
-  max-width: 1094px;
   background-color: #243B6B;
   margin: auto;
   margin-top: -1.4%;
@@ -176,9 +175,6 @@ h4 {
 hr {
   width: 100%;
   border: 1px solid #BBE5B3;
-}
-.wrapper {
-  margin: 3%;
 }
 nav {
   display: flex;
@@ -301,6 +297,10 @@ footer p {
   font-weight: 300;
   color: lightgray;
   line-height: 1.5;
+}
+.wrapper {
+  max-width: 1022px;
+  margin: auto;
 }
 .section1 {
   display: flex;
